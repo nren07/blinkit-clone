@@ -1,37 +1,211 @@
-*{
-    margin:0px;
-    
+* {
+  margin: 0px;
 }
-#verticle-line{
-    height:70px;
-    border:1px solid rgb(231, 231, 231);
+#verticle-line {
+  height: 70px;
+  border: 1px solid rgb(231, 231, 231);
 }
-#nav_delivery>h5{
-    margin: 0px;
-    font-weight: 800;
+#nav_delivery > h5 {
+  margin: 0px;
+  font-weight: 800;
 }
-#nav_delivery>p{
-    margin: 0px;
-    font-weight: 450;
+#nav_delivery > p {
+  margin: 0px;
+  font-weight: 450;
 }
-#nav_input_div{
-    border: 1px solid #eeeeee;
-    background-color: #f8f8f8;
-    border-radius: 5px;
-    /* padding-inline: 10px; */
-    width:40vw;
-    height:35px;
+#nav_input_div {
+  border: 1px solid #eeeeee;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  /* padding-inline: 10px; */
+  width: 40vw;
+  height: 35px;
 }
-#nav_input_div>input{
-    border:none;
-    background-color: #f8f8f8;
-    width:95%;
-    height:35px;
+#nav_input_div > input {
+  border: none;
+  background-color: #f8f8f8;
+  width: 95%;
+  height: 35px;
 }
-#categories{
+#hero_section > img {
+  width: 95vw;
+}
+#categories {
+  width: 95vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cards,
+.categories2,
+footer {
+  width: 93vw;
+  margin: auto;
+  padding: auto;
+}
+.scroll_div {
+  white-space: nowrap;
+  overflow-x:auto
+  /* display: flex;
+    justify-content: space-between; */
+}
+.scroll_div > img {
+  display: inline-block;
+  /* padding-right: 10px; */
+}
+.categories2 {
+  margin: 20px;
+}
+.my-card {
+  width: 200px;
+  display: inline-block !important;
+  /* to override styling over boot strap we use !important key word */
+  margin-top: 25px;
+  margin-right: 20px;
+}
+/* .rupee_btn_div{
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 90vw;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+} */
+
+.time-div {
+  background-color: #f8f8f8;
+  width: fit-content;
+  font-weight: 600;
+  border-radius: 5px;
+  padding-inline: 5px;
+}
+.product_title {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.product_weight {
+  color: #6a6a6a;
+  font-size: 13px;
+}
+
+#row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 0px;
+}
+#row2 > p {
+  width: 30%;
+  color: #6a6a6a;
+  font-size: 14px;
+  text-align: justify;
+  padding-top: 15px;
+}
+
+#row3 {
+  text-align: justify;
+  color: #6a6a6a;
+  font-size: 15px;
+}
+#download_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-inline: 100px;
+}
+#download_section > p {
+  margin: 0px;
+  padding: 0px;
+  color: #6a6a6a;
+  font-weight: 600;
+  font-size: 14px;
+}
+#download_section > img {
+  width: 96px;
+  height: 30px;
+  margin: 10px;
+}
+#social_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social_icons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#row1_table1 {
+  flex: 1;
+}
+#row1_table2 {
+  flex: 2;
+}
+#row1 {
+  margin-bottom: 40px;
+}
+table {
+  width: 100%;
+}
+td {
+  font-size: 14px;
+  color: #6a6a6a;
+  line-height: 2;
+}
+
+
+@media screen and (max-width:768px){
+    nav{
+        margin-top: 10px;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    #verticle-line{
+        display:none;
+    }
+    #nav_delivery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav_input_div{
+        width: 90vw;
+    }
+    #hero_section>img{
+        display: none;
+    }
+    #row1{
+        flex-direction: column;
+    }
+    .table_heading{
+        margin: 10px;
+    }
+    table{
+        width:100%
+        margin: 10px;
+    }
+    td{
+        text-align: center;
+        padding-inline-end: 5px;
+        line-height: 1;
+    }
+    #row2{
+        flex-direction: column;
+    }
+    #row2>p{
+        width: 90vw;
+    }
 }
